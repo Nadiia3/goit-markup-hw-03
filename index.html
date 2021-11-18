@@ -10,23 +10,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+            integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <!-- HEADER -->
     <header class="header">
-        <nav class="header-navigation">
-            <a class="header-text1 link" href=""> Wed<span class="header-text2">Studio</span></a>
-            <ul class="list header-list">
-                <li class="header-item"> <a class="link header-link" href="./index.html" > Студио </a></li>
-                <li class="header-item"> <a class="link header-link" href="./portfolio.html"> Портфолио </a></li>
-                <li class="header-item"> <a  href="" class="link header-link"> Контакты </a></li>
+        <div class="container header-flex">
+            <nav class="header-navigation">
+                <a href="index.html" class="header-logo link"> Web<span class="header-studio">Studio</span> </a>
+                <ul class="header-list list">
+                    <li class="header-item"> <a href="index.html" class="header-link link"> Студия</a></li>
+                    <li class="header-item"> <a href="portfolio.html" class="header-link link"> Портфолио</a></li>
+                    <li class="header-item"> <a href="" class="header-link link"> Контакты</a></li>
+                </ul>
+            </nav>
+            <ul class="auth-nav list">
+                <li class="header-item"> <a href="mailto:info@devstudio.com" class="header-mail link">info@devstudio.com
+                    </a></li>
+                <li class="header-item"> <a href="tel:+380961111111" class="header-tel link">+38 096 111 11 11</a></li>
             </ul>
-        </nav>
-        <ul class="list">
-            <li class="header-item"> <a class="header-email link " href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li class="header-item"> <a class="header-tel link "  href="tel:+380961111111"> +380961111111 </a></li>
-        </ul>
+        </div>
     </header>
      
     <main>
@@ -37,34 +44,31 @@
             <button type="button" class="hero-btn">Заказать услугу</button>
         </section>
 
-
-       <!-- FEATURES -->
-        <section class="features">
-            <ul class="list features-list">
-                <li class="features-item">
-                    <h3 class="features-title"> ВНИМАНИЕ К ДЕТАЛЯМ</h3>
-                    <p class="features-after-title">Идейные соображения, а также
-                        начало повседневной работы по
-                        формированию позиции.</p>
-                </li>
-
-                <li class="features-item">
-                    <h3 class="features-title">ПУНКТУАЛЬНОСТЬ</h3>
-                    <p class="features-after-title">Задача организации, в особенности
-                        же рамки и место обучению кадров
-                        влечет за собой. </p>
-                </li>
-                <li class="features-item">
-                    <h3 class="features-title">ПЛАНИРОВАНИЕ</h3>
-                    <p class="features-after-title">Равным образом консультация с
-                        широким активом в значительной
-                        степениобуславливает.</p>
-                </li>
-                <li class="features-item">
-                    <h3 class="features-title">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
-                    <p class="features-after-title">Значимость этих проблем 
-                        настолько очевидна, что реализация плановых заданий.</p>
-                </li>
+        <!-- Приховати заголовок нижче 'Особенности'-->
+        <section class="section benefits">
+            <div class="container">
+                <h2 class="visually-hidden"> Особенности</h2>
+                <ul class="benefits-list list">
+                    <li class="benefits-item">
+                        <h3 class="benefits-item-title">Внимание к деталям</h3>
+                        <p class="benefits-text">Идейные соображения, а также начало повседневной работы по формированию
+                            позиции.</p>
+                    </li>
+                    <li class="benefits-item">
+                        <h3 class="benefits-item-title">Пунктуальность</h3>
+                        <p class="benefits-text">Задача организации, в особенности же рамки и место обучения кадров влечет за
+                            собой.</p>
+                    </li>
+                    <li class="benefits-item">
+                        <h3 class="benefits-item-title">Планирование</h3>
+                        <p class="benefits-text">Равным образом консультация с широким активом в значительной степени
+                            обуславливает.</p>
+                    </li>
+                    <li class="benefits-item">
+                        <h3 class="benefits-item-title">Современные технологии</h3>
+                        <p class="benefits-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+                        </p>
+                    </li>
                 </ul>
                 </section>
 
