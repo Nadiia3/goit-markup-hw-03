@@ -326,7 +326,25 @@ color: var(--accent-color);
 
 
 /* ----------------PORTFOLIO----- */
+.portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.portfolio-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.portfolio-list, .portfolio-item +.portfolio-item {
+    margin-left: 8px;
+}
 .portfolio-btn {
+     display: inline-block;
+     height: 38px;
+     min-width: 73px;
+     padding: 6px 22px;
+     border: 0;
      cursor: pointer;
      font-family: inherit;
      font-weight: 500;
@@ -353,18 +371,45 @@ color: var(--accent-color);
   border-radius: 4px;
 }
 
-.menu {
-    background: #E5E5E5;
+/* projects */
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.projects-item + .projects-item {
+  margin-left: 30px;
+}
+.projects-item:nth-child(3n + 1) {
+  margin-left: 0;
+}
+.projects-item {
+  margin-bottom: 30px;
+  width: 370px;
+  box-sizing: border-box;
+}
+.projects-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
 }
 .projects-title {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    color: var(--second-title-color);
+  margin-bottom: 4px;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--second-title-color);
 }
 .projects-text {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.87;
-    color: var(--third-title-color);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--first-text-color);
+}
+.card {
+  padding: 20px 24px;
+
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
