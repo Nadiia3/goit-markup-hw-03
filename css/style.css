@@ -15,17 +15,83 @@ body {
     font-family: Roboto; 
     color: #E5E5E5;
 }
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+h1,
+h2,
+h3, 
+p,
+ul {
+    margin: 0;
+}
 
 .list {
 list-style: none;
+padding: 0;
 }
 
 .link {
     text-decoration: none;
 }
-/*/////////// HEADER//////////// */
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+/* -----------------HEADER-------------- */
 .header {
+    border-bottom: 1px solid #ececec;
     background: #FFFFFF;
+}
+
+
+
+/* hesder-flex */
+.header-flex {
+    display: flex;
+    align-items: center;
+    justify-content: ;
+}
+
+.header-list {
+    display: flex;
+    margin-left: 93px;
+}
+
+.header-navigation {
+    display: flex;
+    align-items: center;
+}
+
+.header-list, .header-item  +.header-item{
+  margin-left: 50px;
+}
+.auth-nav {
+    display: flex;
+    margin-left: auto;
+}       
+
+.auth-nav, .header-item +.header-item {
+    margin-left: 50px;
 }
 
 .header-text1 {
@@ -43,6 +109,9 @@ list-style: none;
     color: var(--second-title-color);
 }
 .header-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -68,17 +137,30 @@ list-style: none;
     color: var(--main-text-color);
 } 
 /* /////////////////////   HERO   /////////// */
+.products {
+    padding-top: 47px;
+    padding-bottom: 94px;
+}
  .hero {
     background-color: #2F303A;
+    padding-top: 200px;
+    padding-bottom: 20px;
+ }
+ .hero-content {
+     text-align: center;
  }
  .hero-list {
+     margin-top: 0;
+     margin-left: 30px;
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     color: var(--main-title-color);
  }
+
  .hero-btn {
-    cursor: pointer;
+     cursor: pointer;
      font-family: inherit;
      font-weight: 500;
      font-size: 16px;
@@ -107,10 +189,19 @@ list-style: none;
 /* ------------------FEATURES---------- */
 
 .features {
-    background: white;
+     padding-top: 94px;
+     padding-bottom: 47px;
+     background: white;
+}
+.features-list {
+    display: flex;
 }
 
+
 .features-title {
+    width: 270px;
+    margin-bottom: 10px;
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -122,6 +213,9 @@ list-style: none;
     font-size: 14px;
     line-height: 1.71;
     color: var(--third-title-color);
+}
+.features-item +.features-item {
+    margin-left: 30px;
 }
 
 /* /////////////What-we-do///////// */
