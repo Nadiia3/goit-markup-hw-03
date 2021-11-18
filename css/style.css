@@ -136,10 +136,6 @@ img {
     color: var(--main-text-color);
 } 
 /* /////////////////////   HERO   /////////// */
-.products {
-    padding-top: 47px;
-    padding-bottom: 94px;
-}
  .hero {
     background-color: #2F303A;
     padding-top: 200px;
@@ -217,8 +213,11 @@ img {
     margin-left: 30px;
 }
 
-/* /////////////What-we-do///////// */
-
+/* /////////////products///////// */
+.products {
+    padding-top: 47px;
+    padding-bottom: 94px;
+}
 .products-title {
     text-transform: none;
     font-weight: 700;
@@ -226,21 +225,46 @@ img {
     line-height: 1.17;
     color: var(--second-title-color);
 }
+.products-list {
+    display: flex;
+}
+.products-list, .products-item +.products-item {
+    margin-left: 30px;
+}
 
 
-/* ///////////////OUR TEAM///////// */
+/* /////////////// TEAM///////// */
 
 .team {
     background: #F5F4FA;
+    padding-bottom: 94px;
+    padding-top: 94px;
 }
-
+.team-list {
+    display: flex;
+}
+.card-team{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.team-list, .team-item +.team-item{
+    margin-left: 30px;
+}
+.team-item {
+    background: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
 .team-title {
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17; 
    color:var(--second-title-color);
 }
 .team-name {
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -255,6 +279,8 @@ img {
 
 /* ////////// Addresses//////////*/
 .contacts {
+    padding-top: 60px;
+    padding-bottom: 60px;
     background: #2F303A;
 }
 .contacts-text {
@@ -270,6 +296,13 @@ img {
     font-size: 26px;
     line-height: 1.19;
     color: var(--main-title-color);
+}
+.address {
+    margin-top: 20px;
+    font-style: normal;
+}
+.contacts-item {
+    margin-bottom: 9px;
 }
 
 .contacts-address {
