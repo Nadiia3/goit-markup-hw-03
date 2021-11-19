@@ -117,15 +117,15 @@ img {
 .header-link:focus {
     color: var(--accent-color);
 }
-.header-email:hover,
-.header-email:focus{
+.header-mail:hover,
+.header-mail:focus{
     color: var(--accent-color);
 }
 .header-tel:hover,
 .header-tel:focus{
   color: var(--accent-color);
 }
-.header-email, .header-tel {
+.header-mail, .header-tel {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
